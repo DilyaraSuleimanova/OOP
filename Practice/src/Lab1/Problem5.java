@@ -66,8 +66,8 @@ public class Problem5 {
 		
 		DragonLaunch launch = new DragonLaunch();
 		
-		launch.kidnap(new Person("C", Gender.GIRL));
 		launch.kidnap(new Person("A", Gender.BOY));
+		launch.kidnap(new Person("C", Gender.GIRL));
 		launch.kidnap(new Person("B", Gender.BOY));
 		launch.kidnap(new Person("D", Gender.GIRL));
 		
