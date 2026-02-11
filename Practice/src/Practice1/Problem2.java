@@ -9,6 +9,8 @@ public class Problem2 {
 		int a;
 		Scanner scan = new Scanner(System.in);
 		a = scan.nextInt();
+		scan.close();
+		
 		int area, perimeter;
 		double diagonal;
 		
@@ -17,7 +19,7 @@ public class Problem2 {
 		diagonal = a * Math.sqrt(2);
 		
 		System.out.println("Area = " + area + "\nPerimeter = " + perimeter + "\nDiagonal = " + diagonal);
-
+		
 	}
 
 }

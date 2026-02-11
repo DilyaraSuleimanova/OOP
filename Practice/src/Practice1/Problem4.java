@@ -17,6 +17,8 @@ public class Problem4 {
 		System.out.println("c = ");
 		c = scan.nextInt();
 		
+		scan.close();
+		
 		D = b * b - 4 * a * c;
 		
 		if (D > 0) {

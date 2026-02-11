@@ -13,6 +13,7 @@ public class Problem5 {
 		initial_balance = scan.nextInt();
 		System.out.print("interest: ");
 		interest = scan.nextInt();
+		scan.close();
 		
 		double new_balance = initial_balance;
 		new_balance += initial_balance * interest / 100;

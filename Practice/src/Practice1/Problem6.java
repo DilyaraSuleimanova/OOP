@@ -22,6 +22,7 @@ public class Problem6 {
 //	public static void main (String[] args) {
 //		Scanner scan = new Scanner(System.in);
 //		String word = scan.next();
+//		scan.close();
 //		
 //		if (isPalindrome(word)) {
 //			System.out.println("yes");

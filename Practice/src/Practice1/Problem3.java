@@ -8,6 +8,7 @@ public class Problem3 {
 		Scanner scan = new Scanner(System.in);
 		int grade_number = scan.nextInt();
 		
+		scan.close();
 		if (grade_number >= 95) {
             System.out.println("Grade A");
         } 
@@ -41,7 +42,7 @@ public class Problem3 {
 		else {
             System.out.println("Fail");
         }
-
+		
 	}
 
 }

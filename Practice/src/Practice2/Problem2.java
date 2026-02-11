@@ -1,3 +1,4 @@
+package Practice2;
 import java.util.Scanner;
 
 class StarTriangle {
@@ -27,6 +28,7 @@ public class Problem2 {
 		int layers;
 		Scanner scan = new Scanner(System.in);
 		layers = scan.nextInt();
+		scan.close();
 		
 		StarTriangle star = new StarTriangle(layers);
 		System.out.println(star.toString());
