@@ -1,5 +1,7 @@
 package Practice3;
 
+import java.util.Vector;
+
 class Person {
 	private String name;
 	private String address;
@@ -104,5 +106,28 @@ class Staff extends Person {
 }
 
 public class Problem2 {
+	public static void main(String[] args) {
+		Vector<Student> students = new Vector<>();
+		Vector<Staff> staffs = new Vector<>();
+		
+		students.add(new Student("Maral", "Almaty", "Information Systems", 2, 40000));
+		students.add(new Student("Alan", "Astana", "Information Systems", 3, 40000));
+		students.add(new Student("Karry", "Almaty", "Computer Systems", 1, 40000));
+		
+		
+		staffs.add(new Staff("Dastan", "Aktau", "ISE", 500000));
+		staffs.add(new Staff("Karlygash", "Karaganda", "SITE", 450000));
+		staffs.add(new Staff("Sultan", "Shymkent", "BS", 60000));
+		
+		System.out.println("STUDENTS:");
+		for (Student student: students) {
+			System.out.println(student.toString() + "\n");
+		}
+		
+		System.out.println("STAFFS:");
 
+		for (Staff staff: staffs) {
+			System.out.println(staff.toString() + "\n");
+		}
+	}
 }

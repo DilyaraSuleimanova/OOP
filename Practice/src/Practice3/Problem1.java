@@ -9,6 +9,14 @@ class Animal {
 		this.name = name;
 	}
 	
+	public String getName() {
+		return this.name;
+	}
+	
+	public int getNumberOfLegs() {
+		return this.legs;
+	}
+	
 	public void eat() {
 		System.out.println("Nom nom nom");
 	}
@@ -20,7 +28,7 @@ class Animal {
 	public void makesound() {
 		System.out.println("🔊");
 	}
-	
+		
 }
 
 class Dog extends Animal {
@@ -48,5 +56,8 @@ public class Problem1 {
         dog.eat("meat"); 
         
         dog.makesound();
+        
+        System.out.println(dog.getName());
+        System.out.println(dog.getNumberOfLegs());
 	}
 }
