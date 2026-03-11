@@ -11,7 +11,7 @@ public abstract class Animal {
 	}
 	
 	public String getNameOfPet() {
-		return name;
+		return this.name;
 	}
 	
 	public int getAgeOfPet() {

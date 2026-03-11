@@ -19,19 +19,19 @@ public class PersonRegistry {
 		System.out.println(person.getName() + " was removed.");
 	}
 	
+	 public void printPeopleWithPets() {
+	        for (Person p : people) {
+	            if (p.hasPet())
+	                System.out.println(p);
+	        }
+	    }
+	 
+    public void printPeopleWithoutPets() {
+        for (Person p : people) {
+            if (!p.hasPet())
+                System.out.println(p);
+        }
+    }
 	
 	
-	public void printAll() {	 
-		for (int i = 0; i < people.size(); i++) {
-			Person person = people.get(i);
-			System.out.println(person.toString() + "\nHas pet: " + person.hasPet());
-			
-			if (person.hasPet()) {
-				Animal pet = people.get(i).getPet();
-				System.out.println("\nPet info:\n" + pet.toString());
-			}
-			
-			System.out.println();
-		}
-	}
 }

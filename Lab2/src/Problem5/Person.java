@@ -15,10 +15,6 @@ public abstract class Person {
 		return name;
 	}
 	
-	public int getAge() {
-		return age;
-	}
-	
 	public void assignPet(Animal pet) {
 	    this.pet = pet;
 	}
@@ -52,7 +48,7 @@ public abstract class Person {
 	    	person.assignPet(pet);
 	        this.removePet();
 
-	        System.out.println(person.getName() + " is taking care of " + pet.getNameOfPet());
+	        System.out.println(person.getName() + " is taking care of " + person.pet.getNameOfPet());
 	    } else {
 	        System.out.println(person.getName() + " already has a pet.");
 	    }
@@ -60,7 +56,7 @@ public abstract class Person {
 	
 	public void retrievePetFrom(Person person) {
 		
-	    this.assignPet(pet);
+	    this.assignPet(person.pet);
 	    person.removePet();
 
 	    System.out.println(this.getName() + " got back " + pet.getNameOfPet());
@@ -70,6 +66,6 @@ public abstract class Person {
 	
 	@Override
 	public String toString() {
-		return "Name: " + getName() + "\nAge: " + getAge() + "\nOccupation: " + getOccupation();
+		return "Name: " + getName() + "\nAge: " + age + "\nOccupation: " + getOccupation();
 	}
 }
