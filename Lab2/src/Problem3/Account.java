@@ -1,8 +1,8 @@
 package Problem3;
 
 public class Account{
-	private double balance; // The current balance
-	private int accNumber; // The account number
+	private double balance; 
+	private int accNumber; 
 	
 	public Account(int a){
 		balance = 0.0;
