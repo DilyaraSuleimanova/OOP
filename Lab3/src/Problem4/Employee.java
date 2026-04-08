@@ -1,7 +1,6 @@
 package Problem4;
 
 import java.util.Date;
-import java.util.Objects;
 
 public class Employee extends Person implements Comparable<Employee>, Cloneable {
 	private double salary;
